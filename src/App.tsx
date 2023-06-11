@@ -1,24 +1,19 @@
 import React from 'react';
 import './App.css';
-import NavBar from './component/NavBar';
-import Home from './component/Home';
+// import NavBar from './component/NavBar';
+// import Home from './component/Home';
 import Login from './component/Login';
-
-// function App() {
-//   return (
-//     // <NavBar/>
-//     <Home/>
-//   );
-// }
+// import SignUp from './component/SignUp';
 
 
 
 const App = () => {
   return (
     <>
-      <NavBar />
-      <Home />
+      {/* <NavBar /> */}
+      {/* <Home /> */}
       <Login/>
+      {/* <SignUp/> */}
     </>
   );
 };

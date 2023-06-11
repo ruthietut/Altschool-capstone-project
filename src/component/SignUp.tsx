@@ -1,6 +1,6 @@
 import React from "react";
 
-const Login = () => {
+const SignUp = () => {
     return(
     <div className="2xl:container h-screen m-auto">
         
@@ -9,7 +9,7 @@ const Login = () => {
             <div className="m-auto py-12 px-6 sm:p-20 xl:w-10/12">
                 <div className="space-y-4">
                     
-                    <p className="font-medium text-lg text-gray-600 text-center">Log in with:</p>
+                    <p className="font-medium text-lg text-gray-600 text-center">Sign up with:</p>
                 </div>
                 
                 <div className="mt-12 grid gap-6 sm:grid-cols-2">
@@ -35,8 +35,16 @@ const Login = () => {
                 <form action="" className="space-y-6 py-6">
                     <div>
                         <input 
+                                type="text" 
+                                placeholder="Username"
+                                className="w-full py-3 px-6 ring-1 ring-[#005AE2] rounded-xl placeholder-gray-600 bg-transparent transition disabled:ring-[#005AE2] disabled:bg-gray-100 disabled:placeholder-gray-400 invalid:ring-red-400 focus:invalid:outline-none"
+                        />
+                    </div>
+
+                    <div>
+                        <input 
                                 type="email" 
-                                placeholder="Email address or username"
+                                placeholder="Email"
                                 className="w-full py-3 px-6 ring-1 ring-[#005AE2] rounded-xl placeholder-gray-600 bg-transparent transition disabled:ring-[#005AE2] disabled:bg-gray-100 disabled:placeholder-gray-400 invalid:ring-red-400 focus:invalid:outline-none"
                         />
                     </div>
@@ -45,19 +53,26 @@ const Login = () => {
                         <input 
                                 type="password" 
                                 placeholder="Password"
+                                className="w-full py-3 px-6 ring-1 ring-[#7e8fa8] rounded-xl placeholder-gray-600 bg-transparent transition disabled:ring-[#005AE2] disabled:bg-gray-100 disabled:placeholder-gray-400 invalid:ring-red-400 focus:invalid:outline-none"
+                        />
+                       
+                    </div>
+
+                    <div className="flex flex-col items-end">
+                        <input 
+                                type="password" 
+                                placeholder="Retype Password"
                                 className="w-full py-3 px-6 ring-1 ring-[#005AE2] rounded-xl placeholder-gray-600 bg-transparent transition disabled:ring-[#005AE2] disabled:bg-gray-100 disabled:placeholder-gray-400 invalid:ring-red-400 focus:invalid:outline-none"
                         />
-                        <button type="reset" className="w-max p-3 -mr-3">
-                            <span className="text-sm tracking-wide text-blue-600">Forgot your password ?</span>
-                        </button>
+                       
                     </div>
 
                     <div>
                         <button className="w-full px-6 py-3 rounded-xl bg-[#005AE2] transition hover:bg-sky-600 focus:bg-sky-600 active:bg-sky-800">
-                            <span className="font-semibold text-white text-lg">Log in</span>
+                            <span className="font-semibold text-white text-lg">Sign up with Email</span>
                         </button>
                         <a href="#" type="reset" className="w-max p-3 -ml-3">
-                            <span className="text-sm tracking-wide text-blue-600 text-center">Don't have an account? Sign up</span>
+                            <span className="text-sm tracking-wide text-blue-600 text-center">Already have an account? Log in</span>
                         </a>
                         <p className="text-center text-sm text-gray-400">By signing in with an account, you agree to <br/> Scissors's Terms of Service, Privacy Policy and Acceptable Use Policy</p>
                     </div>
@@ -68,4 +83,4 @@ const Login = () => {
     );
 }
 
-export default Login
+export default SignUp
