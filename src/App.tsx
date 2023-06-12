@@ -3,7 +3,8 @@ import './App.css';
 // import NavBar from './component/NavBar';
 // import Home from './component/Home';
 import Login from './component/Login';
-// import SignUp from './component/SignUp';
+import SignUp from './component/SignUp';
+import Footer from './component/Footer';
 
 
 
@@ -12,8 +13,9 @@ const App = () => {
     <>
       {/* <NavBar /> */}
       {/* <Home /> */}
-      <Login/>
+      {/* <Login/> */}
       {/* <SignUp/> */}
+      <Footer/>
     </>
   );
 };

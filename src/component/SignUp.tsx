@@ -72,7 +72,7 @@ const SignUp = () => {
                             <span className="font-semibold text-white text-lg">Sign up with Email</span>
                         </button>
                         <a href="#" type="reset" className="w-max p-3 -ml-3">
-                            <span className="text-sm tracking-wide text-blue-600 text-center">Already have an account? Log in</span>
+                            <span className="text-sm tracking-wide text-black-600 text-center">Already have an account? <span className="text-[#005AE2]">Log in</span></span>
                         </a>
                         <p className="text-center text-sm text-gray-400">By signing in with an account, you agree to <br/> Scissors's Terms of Service, Privacy Policy and Acceptable Use Policy</p>
                     </div>

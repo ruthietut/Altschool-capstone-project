@@ -57,7 +57,7 @@ const Login = () => {
                             <span className="font-semibold text-white text-lg">Log in</span>
                         </button>
                         <a href="#" type="reset" className="w-max p-3 -ml-3">
-                            <span className="text-sm tracking-wide text-blue-600 text-center">Don't have an account? Sign up</span>
+                            <span className="text-sm tracking-wide text-black-600 text-center">Don't have an account?<span className="text-[#005AE2]">Sign up</span></span>
                         </a>
                         <p className="text-center text-sm text-gray-400">By signing in with an account, you agree to <br/> Scissors's Terms of Service, Privacy Policy and Acceptable Use Policy</p>
                     </div>
