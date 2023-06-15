@@ -1,14 +1,17 @@
 import React from 'react'
+import Footer from '../component/Footer';
+
 
 const GetInTouch = () => {
   return (
-    <div className="2xl:container h-screen m-auto">
-      <div
+   <>
+    <div className="2xl:container h-auto m-auto">
+      {/* <div
         hidden
         role="hidden"
         className="fixed inset-0 w-6/12 ml-auto bg-white bg-opacity-70 backdrop-blur-xl lg:block"
-      ></div>
-      <div className="relative h-full ml-auto lg:w-6/12">
+      ></div> */}
+      <div className="relative h-full mx-auto lg:w-6/12">
         <div className="m-auto py-12 px-6 sm:p-20 xl:w-10/12">
           <div className="space-y-4">
             <p className="font-medium text-lg  text-center text-bold">
@@ -121,6 +124,8 @@ const GetInTouch = () => {
         </div>
       </div>
     </div>
+    <Footer/>
+   </>
   )
 }
 

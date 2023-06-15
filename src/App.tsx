@@ -1,24 +1,20 @@
 import React from 'react';
 import './App.css';
-import NavBar from './component/NavBar';
-import Home from './component/Home';
-import Login from './component/Login';
-import SignUp from './component/SignUp';
-import Footer from './component/Footer';
-import GetInTouch from './component/GetInTouch'
+import NavBar from '../src/component/NavBar';
+import SignUp from '../src/pages/SignUp';
+import LogIn from '../src/pages/Login';
+import Home from '../src/component/Home';
+import GetInTouch from '../src/component/GetInTouch';
 
-
-
-const App = () => {
+function App() {
   return (
     <>
       {/* <NavBar /> */}
-      {/* <Home /> */}
-      {/* <Login/> */}
-      {/* <SignUp/> */}
-      {/* <Footer/> */}
-      <GetInTouch/>
+      <Home />
+      {/* <LogIn /> */}
+      {/* <GetInTouch /> */}
     </>
   );
-};
-export default App;
+}
+
+export default App;

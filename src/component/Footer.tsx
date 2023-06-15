@@ -7,13 +7,14 @@ import { FaFacebook } from 'react-icons/fa'
 function Footer() {
   return (
     <>
-      <div className="bg-gray-50 flex justify-around md:gap-[4vw] mb-6 md:mb-0 w-full items-start ">
+      <div className='bg-slate-300'>
+      <div className=" flex justify-around md:gap-[4vw] mb-6 md:mb-0 w-full items-start ">
         <div className="p-5">
           <ul>
             <img
               src="./src/assets/images/scissor logo Black.png"
               alt="Image"
-              className="  pb-5 w-14"
+              className="pb-5 w-16"
             />
             <div className="flex gap-3 pb-5 ">
               <FaTwitter className=" cursor-pointer hover:text-blue-600" />
@@ -39,6 +40,7 @@ function Footer() {
             </li>
           </ul>
         </div>
+
         <div className="p-5">
           <ul>
             <p className="text-gray-800 font-bold text-sm/[12px] pb-2">
@@ -100,85 +102,80 @@ function Footer() {
           </ul>
         </div>
       </div>
-      <div className='flex bg-gray-50'>
-      <div className="p-5">
+
+      <div className=" flex justify-between ml-[25%] w-[55%]">
+        <div className="p-5">
           <ul>
-            <p className="text-gray-800 font-bold text-sm/[12px] pb-4">
-              Why Scissor?
-            </p>
-            <li className=" text-sm/[5px] pb-2  hover:text-blue-600 curosr-pointer  ">
-              Scissor 101
+            <p className="text-gray-800 font-bold text-sm mb-3">Resources</p>
+            <li className=" text-sm hover:text-blue-600 curosr-pointer  ">
+              Blog
             </li>
-            <li className=" text-sm pb-2 hover:text-blue-600 curosr-pointer  ">
-              Integrations & API
+            <li className=" text-sm hover:text-blue-600 curosr-pointer  ">
+              Resource Library
             </li>
-            <li className=" text-sm/[5px]  hover:text-blue-600 curosr-pointer  ">
-              Pricing
+            <li className=" text-sm  hover:text-blue-600 curosr-pointer  ">
+              Developers
+            </li>
+            <li className=" text-sm  hover:text-blue-600 curosr-pointer  ">
+              App Connectors
+            </li>
+            <li className=" text-sm  hover:text-blue-600 curosr-pointer  ">
+              Support
+            </li>
+            <li className=" text-sm  hover:text-blue-600 curosr-pointer  ">
+              Trust Center
+            </li>
+            <li className=" text-sm  hover:text-blue-600 curosr-pointer  ">
+              Browser Extension
+            </li>
+            <li className="text-sm  hover:text-blue-600 curosr-pointer  ">
+              Mobile App
             </li>
           </ul>
         </div>
         <div className="p-5">
           <ul>
-            <p className="text-gray-800 font-bold text-sm/[12px] pb-2">
-              Solutions
-            </p>
-            <li className=" text-sm  hover:text-blue-600 curosr-pointer  ">
-              Social Media
+            <p className="text-gray-800 font-bold text-sm mb-3">Features</p>
+            <li className="text-sm  hover:text-blue-600 curosr-pointer  ">
+              Branded Links
             </li>
-            <li className=" text-sm  hover:text-blue-600 curosr-pointer  ">
-              Digital Marketing
+            <li className="text-sm  hover:text-blue-600 curosr-pointer  ">
+              Mobile Links
             </li>
-            <li className=" text-sm  hover:text-blue-600 curosr-pointer  ">
-              Customer Service
+            <li className="text-sm  hover:text-blue-600 curosr-pointer  ">
+              Campaign
             </li>
-            <li className=" text-sm  hover:text-blue-600 curosr-pointer  ">
-              For Developers
+            <li className="text-sm  hover:text-blue-600 curosr-pointer  ">
+              Management & Analytics
             </li>
-          </ul>
-        </div>
-        <div className="p-5">
-          <ul>
-            <p className="text-gray-800 font-bold  text-sm/[12px] pb-2">
-              Products
-            </p>
-            <li className=" text-sm  hover:text-blue-600 curosr-pointer  ">
-              Link Management
-            </li>
-            <li className=" text-sm  hover:text-blue-600 curosr-pointer  ">
-              QR Codes
-            </li>
-            <li className=" text-sm  hover:text-blue-600 curosr-pointer  ">
-              Link-in-bio
+            <li className="text-sm  hover:text-blue-600 curosr-pointer  ">
+              QR Code generation
             </li>
           </ul>
         </div>
         <div className="p-5">
           <ul>
-            <p className="text-gray-800 font-bold  text-sm/[12px] pb-2">
-              Company
-            </p>
+            <p className="text-gray-800 font-bold text-sm mb-3">Legal</p>
             <li className=" text-sm  hover:text-blue-600 curosr-pointer  ">
-              About Scissor{' '}
+              Privacy Policy
             </li>
             <li className=" text-sm  hover:text-blue-600 curosr-pointer  ">
-              Careers
+              Cookie Policy
             </li>
             <li className=" text-sm  hover:text-blue-600 curosr-pointer  ">
-              Partners
+              Terms of Service
             </li>
             <li className=" text-sm  hover:text-blue-600 curosr-pointer  ">
-              Press
+              Acceptable Use Policy
             </li>
             <li className=" text-sm  hover:text-blue-600 curosr-pointer  ">
-              Contact
-            </li>
-            <li className=" text-sm  hover:text-blue-600 curosr-pointer  ">
-              Reviews
+              Code of Conduct
             </li>
           </ul>
         </div>
       </div>
-    
+      </div>
+  
     </>
   )
 }
