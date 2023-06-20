@@ -20,7 +20,7 @@ const GetInTouch = () => {
           </div>
 
           <form action="" className="space-y-6 py-6">
-            <div className="flex justify-between m-5">
+            <div className="flex justify-between gap-5">
               <div>
                 <label htmlFor="">Firstname*</label>
                 <input

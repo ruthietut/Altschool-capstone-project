@@ -5,7 +5,6 @@ import SignUp from '../src/pages/SignUp';
 import LogIn from '../src/pages/Login';
 import Home from '../src/component/Home';
 import GetInTouch from '../src/component/GetInTouch';
-
 function App() {
   return (
     <>
