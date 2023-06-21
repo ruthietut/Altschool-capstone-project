@@ -10,6 +10,7 @@ import { FAQQuestionAndAnswer } from "../../data/Faq";
 // Naviagtion Style
 import style from "./Faq.module.scss";
 
+
 // Icon Style
 const Iconstyle = {
   fontSize: "1.5em",

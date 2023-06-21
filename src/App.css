@@ -1,7 +1,21 @@
 .optimize{
-    background-image: url(./assets/images/optimize\ link-bg.jpg);
-    background-size: cover;
+    background: url("../src/assets/images/optimize\ link-bg.jpg");
+        background-repeat: no-repeat;
+        background-size:  cover;
+        background-position: top right;
+        height: 250px;
+        
+}
+
+.footer-bg{
+    background-image: url("../src//assets//images/footer-bg.jpg");
     background-repeat: no-repeat;
-    width: 500px;
-    color:green;
+        background-size:  cover;
+}
+
+.url-bg{
+    background: url("../src/assets/images/optimize\ link-bg.jpg");
+        background-repeat: no-repeat;
+        background-size:  cover;
+        background-position: top right;
 }

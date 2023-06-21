@@ -3,11 +3,13 @@ import { FaTwitter } from 'react-icons/fa'
 import { FaInstagram } from 'react-icons/fa'
 import { FaLinkedin } from 'react-icons/fa'
 import { FaFacebook } from 'react-icons/fa'
+import '../App.css'
+
 
 function Footer() {
   return (
     <>
-      <div className='bg-slate-300'>
+      <div className='footer-bg'>
       <div className=" flex justify-around md:gap-[4vw] mb-6 md:mb-0 w-full items-start ">
         <div className="p-5">
           <ul>

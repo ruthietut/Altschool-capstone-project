@@ -5,17 +5,21 @@ import '../App.css'
 function Optimize() {
   return (
     <>
-      <div className="text-center font-bold optimize">
-        <h1>Revolutionizing Link Optimization</h1>
-
-        <div className="text-center">
-          <button className=" px-4 py-2 rounded-full bg-[#005AE2] transition hover:bg-sky-600 focus:bg-sky-600 active:bg-sky-800">
-            <span className="font-semibold text-white text-lg">
-              Get Started
-            </span>
-          </button>
-        </div>
+      <div className="w-[100%] flex flex-col justify-center items-center optimize">
+      <div className="mt-20">
+        
+        <h1 className="text-center text-[48px] font-semibold text-white optimize-text">
+          Revolutionizing  Link Optimization
+        </h1>
       </div>
+      
+      <div className="flex mt-10 mb-10">
+        <button className="bg-[#005AE2] hover:bg-blue-700 text-white font-bold py-2 px-8 rounded-full mr-2">
+          Get Started
+        </button>
+       
+      </div>
+    </div>
     </>
   )
 }
