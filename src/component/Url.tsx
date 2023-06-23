@@ -9,8 +9,8 @@ function Url() {
         <>
        <div className="2xl:container h-auto m-auto url-bg">
      
-      <div className="relative h-full mx-auto lg:w-6/12 bg-white rounded-md">
-        <div className="m-auto py-12 px-6 sm:p-20 xl:w-10/12">
+      <div className="relative mx-auto lg:w-6/12 bg-white rounded-md max-w-lg">
+        <div className="m-auto py-4 px-6 xl:w-10/12">
 
           <form action="" className="space-y-6 py-6">
           <div>
@@ -38,7 +38,7 @@ function Url() {
 
 
             <div>
-            <button className="w-full px-6 py-3 rounded-xl bg-[#005AE2] transition hover:bg-sky-600 focus:bg-sky-600 active:bg-sky-800">
+            <button className="w-full px-6 py-3 rounded-full bg-[#005AE2] transition hover:bg-sky-600 focus:bg-sky-600 active:bg-sky-800">
                 <span className="font-semibold text-white text-lg">Trim URL</span>
               </button>
              

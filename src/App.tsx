@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import NavBar from '../src/component/NavBar';
+import NavBar from './component/NavBars';
 import SignUp from '../src/pages/SignUp';
 import LogIn from '../src/pages/Login';
-import Home from '../src/component/Home';
-import GetInTouch from '../src/component/GetInTouch';
+import Home from './pages/Home';
+import GetInTouch from './pages/GetInTouch';
 function App() {
   return (
     <>
