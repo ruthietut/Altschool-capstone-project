@@ -6,7 +6,7 @@ import '../styles/WhyUs.css'
 
 const WhyUs = () => {
     return (
-        <div className='w-full'>
+        <div className='w-full' id="features">
             <div className='bg-[#F9FBFD]  why-us'>
                 <div className="why-us-head">
                     <h1 className='text-3xl font-bold'>One Stop. Four <span className='text-[#005AE2]'>Possibilities.</span> </h1>

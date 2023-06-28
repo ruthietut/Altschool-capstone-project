@@ -1,9 +1,11 @@
 import Footer from '../component/Footer';
+import NavBar from '../component/NavBar';
 import { Link } from 'react-router-dom';
 
 const Login = () => {
   return (
     <>
+
       <div className="2xl:container h-auto m-auto">
 
         <div className="relative h-fit mx-auto lg:w-6/12">

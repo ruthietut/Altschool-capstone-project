@@ -25,26 +25,26 @@ function NavBar() {
                                 <a href="#" className='text-[#005AE2] font-bold'>My URLs</a>
                             </li>
                             <li>
-                                <a href="#" className=''>Features</a>
+                                <a href="#features" className=''>Features</a>
                             </li>
                             <li>
-                                <a href="#" className=''>Pricing</a>
+                                <a href="#price" className=''>Pricing</a>
                             </li>
                             <li>
                                 <a href="#" className=''>Analytics</a>
                             </li>
                             <li>
-                                <a href="#" className=''>FAQs</a>
+                                <a href="#container" className=''>FAQs</a>
                             </li>
                         </ul>
                         <div className='flex md:flex-row flex-col items-start gap-6'>
-                            <button className='rounded-full md:bg-white md:text-[#005AE2] md:hover:border-[#005AE2] text-white bg-[#005AE2] px-6 md:px-3 py-1 text-md border border-[#005AE2] hover:bg-white hover:text-[#005AE2]'> 
-                            <Link to={'/login'}> Log In </Link>
+                            <button className='rounded-full md:bg-white md:text-[#005AE2] md:hover:border-[#005AE2] text-white bg-[#005AE2] px-6 md:px-3 py-1 text-md border border-[#005AE2] hover:bg-white hover:text-[#005AE2]'>
+                                <Link to={'/login'}> Log In </Link>
                             </button>
 
-                            <button className='rounded-full text-[#005AE2] bg-white px-3 py-1 text-md border border-[#005AE2] hover:bg-[#005AE2] hover:text-white '>Try for free</button>
+                            <button className='rounded-full text-white bg-[#005AE2] px-3 py-1 text-md border border-[#005AE2] hover:bg-white hover:text-[#005AE2]'>
 
-                            <button className='rounded-full text-white bg-[#005AE2] px-3 py-1 text-md border border-[#005AE2] hover:bg-white hover:text-[#005AE2]'>Try for free</button>
+                                <Link to={'/signup'}> Try for free</Link></button>
                         </div>
                     </div>
 
@@ -64,23 +64,25 @@ function NavBar() {
                         <div className='my-mobile-nav'>
                             <ul className='flex mflex-col  gap-2 mb-6 md:mb-0'>
                                 <li>
-                                    <a href="#" className='text-[#005AE2] font-bold'>My URLs</a>
+                                    <a href="#" className='text-[#005AE2] font-bold' onClick={toggleMenu}>My URLs</a>
                                 </li>
                                 <li>
-                                    <a href="#" className=''>Features</a>
+                                    <a href="#features" className='' onClick={toggleMenu}>Features</a>
                                 </li>
                                 <li>
-                                    <a href="#" className=''>Pricing</a>
+                                    <a href="#price" className='' onClick={toggleMenu}>Pricing</a>
                                 </li>
                                 <li>
-                                    <a href="#" className=''>Analytics</a>
+                                    <a href="#" className='' onClick={toggleMenu}>Analytics</a>
                                 </li>
-                                <li>
-                                    <a href="#" className=''>FAQs</a>
+                                <li >
+                                    <a href="#container" className='' onClick={toggleMenu}>FAQs</a>
                                 </li>
                             </ul>
                             <div className='flex md:flex-row flex-col items-start gap-6'>
-                                <button className='rounded-full md:bg-white md:text-[#005AE2] md:hover:border-[#005AE2] text-white bg-[#005AE2] px-6 md:px-3 py-1 text-md border border-[#005AE2] hover:bg-white hover:text-[#005AE2]'>Log In</button>
+                                <button className='rounded-full md:bg-white md:text-[#005AE2] md:hover:border-[#005AE2] text-white bg-[#005AE2] px-6 md:px-3 py-1 text-md border border-[#005AE2] hover:bg-white hover:text-[#005AE2]'>
+                                    <Link to={'/login'}> Log In </Link>
+                                </button>
                             </div>
                         </div>
                     }

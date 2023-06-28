@@ -2,6 +2,7 @@
     display: flex;
     margin: auto 0;
     gap: 20px;
+    z-index: 100;
 }
 
 
@@ -35,6 +36,7 @@
         /* gap: 10px; */
         box-shadow: 0px 5px 10px rgba(128, 128, 128, 0.313);
         width: 200px;
+        z-index: 100;
     }
 
     .my-mobile-nav ul {
