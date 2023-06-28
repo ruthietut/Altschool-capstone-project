@@ -1,4 +1,5 @@
 import '../assets/css/style.css';
+import '../styles/Hero.css'
 
 const Hero = () => {
   return (
@@ -12,17 +13,17 @@ const Hero = () => {
           Solution
         </h1>
       </div>
-      <div className="mt-10">
-        <p className="text-center font-medium text-[18px] leading-relaxed">
+      <div className="mt-10 sub-text-container">
+        <p className="text-center font-medium text-[18px] leading-relaxed hero-subtext">
           Personalize your shortened URLs to align with your brand identity.
-          Utilize custom slugs, <br />
+          Utilize custom slugs,
           branded links, and domain customization options to reinforce your
-          brand presence and <br />
+          brand presence and
           enhance user engagement.
         </p>
       </div>
-      <div className="w-[20%] mt-20 flex justify-between">
-        <button className="rounded-full bg-[#005AE2] text-white text-xl font-semibold py-1 px-6">
+      <div className=" mt-20 flex justify-between gap-3">
+        <button className="rounded-full bg-[#005AE2] text-white text-xl font-semibold py-2 px-6">
           Sign Up
         </button>
         <button className="rounded-full bg-none text-[#005AE2] text-xl font-semibold hover:border hover:border-[#005AE2] py-1 px-6">

@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import { useState } from "react";
 
 // React Icons
 import { AiOutlinePlus } from "react-icons/ai";
@@ -32,7 +32,7 @@ const FAQTab = ({ data }: any) => {
             <li>{data.question} </li>
           </div>
           <div className={style.faq_toggle_option} onClick={HandleToggler}>
-            {!isClicked ? (
+            {isClicked ? (
               <AiOutlinePlus style={Iconstyle} />
             ) : (
               <BiPlus style={Iconstyle} />
@@ -41,7 +41,7 @@ const FAQTab = ({ data }: any) => {
         </div>
         <div
           className={
-            !isClicked
+            isClicked
               ? style.show_tab
               : `${style.show_tab}  ${style.hide_tab} `
           }

@@ -1,10 +1,11 @@
 import Footer from '../component/Footer';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   return (
     <>
       <div className="2xl:container h-auto m-auto">
-        
+
         <div className="relative h-fit mx-auto lg:w-6/12">
           <div className="m-auto py-12 px-6 sm:p-20 xl:w-10/12">
             <div className="space-y-4">
@@ -79,7 +80,7 @@ const Login = () => {
                 <a href="#" type="reset" className="w-max p-3 -ml-3">
                   <span className="text-sm tracking-wide text-black-600 text-center">
                     Don't have an account?
-                    <span className="text-[#005AE2]">Sign up</span>
+                    <Link to={'/signup'} className="text-[#005AE2]">Sign up</Link>
                   </span>
                 </a>
                 <p className="text-center text-sm text-gray-400 mt-4 w-">
@@ -89,14 +90,14 @@ const Login = () => {
                     Terms of Service, Privacy Policy
                   </span>{' '}
                   and <span className="text-black">Acceptable Use Policy</span>
-                              
+
                 </p>{' '}
               </div>
             </form>
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   )
 }
