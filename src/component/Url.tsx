@@ -4,7 +4,7 @@ import db from '../firebase/services'
 import { collection, onSnapshot, setDoc, doc } from 'firebase/firestore'
 
 import { useState, useEffect } from 'react'
-console.log(db)
+
 
 function Url() {
 
@@ -69,7 +69,6 @@ function Url() {
 
         // merge the data into an object
         let myData = Object.assign({}, ...data)
-        console.log(myData)
         setUrls(myData)
 
       }

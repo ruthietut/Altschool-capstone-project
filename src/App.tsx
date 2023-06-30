@@ -6,15 +6,22 @@ import Login from './pages/Login';
 import SignUp from './pages/SignUp';
 import GetInTouch from './pages/GetInTouch';
 import DynamicPage from './pages/DynamicPage';
-function App() {
+import { Query } from 'firebase-admin/firestore';
+import { AuthContextProvider } from './Context/AuthProvider';
+
+
+function App(): JSX.Element {
   return (
-    <Routes>
-      <Route path='/' element={<Home />} />
-      <Route path='/login' element={<Login />} />
-      <Route path='/signup' element={<SignUp />} />
-      <Route path='/contact' element={<GetInTouch />} />
-      <Route path="/:id" element={<DynamicPage />} />
-    </Routes>
+    <AuthContextProvider>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/signup' element={<SignUp />} />
+        <Route path='/contact' element={<GetInTouch />} />
+        <Route path="/:id" element={<DynamicPage />} />
+      </Routes>
+    </AuthContextProvider>
+
   );
 }
 
