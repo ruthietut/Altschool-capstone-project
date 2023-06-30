@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import SignUp from './pages/SignUp';
 import GetInTouch from './pages/GetInTouch';
+import DynamicPage from './pages/DynamicPage';
 function App() {
   return (
     <Routes>
@@ -12,6 +13,7 @@ function App() {
       <Route path='/login' element={<Login />} />
       <Route path='/signup' element={<SignUp />} />
       <Route path='/contact' element={<GetInTouch />} />
+      <Route path="/:id" element={<DynamicPage match={1234} />} />
     </Routes>
   );
 }
