@@ -14,7 +14,7 @@ function Url() {
   const [domain, setDomain] = useState('')
   const [urls, setUrls] = useState({})
 
-  const [success, setSuccess] = useState(true)
+  const [success, setSuccess] = useState(false)
 
   type urls = {
     [key: string]: string
@@ -150,7 +150,12 @@ function Url() {
           success &&
           <div className="view-url">
             <div className="close-modal">
-              <button className="close-btn" onClick={() => setSuccess(!success)}>X</button>
+              <button className="close-btn" onClick={() => {
+                setSuccess(!success)
+                setLongUrl('')
+                setAlias('')
+                setDomain('')
+              }}>X</button>
             </div>
             <div className="url-container" >
               <img />

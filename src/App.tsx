@@ -13,7 +13,7 @@ function App() {
       <Route path='/login' element={<Login />} />
       <Route path='/signup' element={<SignUp />} />
       <Route path='/contact' element={<GetInTouch />} />
-      <Route path="/:id" element={<DynamicPage match={1234} />} />
+      <Route path="/:id" element={<DynamicPage />} />
     </Routes>
   );
 }
