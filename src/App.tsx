@@ -6,7 +6,7 @@ import Login from './pages/Login';
 import SignUp from './pages/SignUp';
 import GetInTouch from './pages/GetInTouch';
 import DynamicPage from './pages/DynamicPage';
-import { Query } from 'firebase-admin/firestore';
+
 import { AuthContextProvider } from './Context/AuthProvider';
 
 
