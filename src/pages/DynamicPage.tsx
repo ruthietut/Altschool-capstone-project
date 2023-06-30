@@ -5,7 +5,7 @@ import { collection, onSnapshot, } from 'firebase/firestore'
 import { useState, useEffect } from 'react'
 
 
-function DynamicPage(): React.FC {
+const DynamicPage: React.FC = () => {
 
     const [URL, setURL] = useState({})
     const { id } = useParams()
@@ -40,7 +40,13 @@ function DynamicPage(): React.FC {
 
     snap()
 
-    return <div>Redirecting...</div>;
+    return (
+        <div>
+            Redirecting...
+        </div>
+    )
+
+    // return <(div>Redirecting...</div)>;
 
 };
 
