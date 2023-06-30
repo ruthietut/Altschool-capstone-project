@@ -13,7 +13,7 @@ function Footer() {
           <div className="p-5 footer-top-element">
             <ul>
               <img
-                src="./src/assets/images/scissor logo Black.png"
+                src="./src/assets/images/scissorlogoBlack.png"
                 alt="Image"
                 className="pb-5 w-16"
               />

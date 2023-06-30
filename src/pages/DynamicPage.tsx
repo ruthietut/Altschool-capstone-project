@@ -23,7 +23,7 @@ const DynamicPage: React.FC = () => {
 
             setURL(myData)
 
-            let myUrl = `shortly.vercel.com/${id}`
+            let myUrl = `xrly.vercel.com/${id}`
             const url = URL[myUrl as keyof typeof URL]
 
 

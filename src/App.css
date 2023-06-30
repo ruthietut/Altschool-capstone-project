@@ -1,5 +1,5 @@
 .optimize {
-    background: url("../src/assets/images/optimize\ link-bg.jpg");
+    background: url("../src/assets/images/optimizelink-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top right;
@@ -16,7 +16,7 @@
 }
 
 .footer-top {
-    width: 100%;
+
     display: flex;
     margin: auto;
 }
@@ -33,7 +33,7 @@
 
 
 .url-bg {
-    background: url("../src/assets/images/optimize\ link-bg.jpg");
+    background: url("../src/assets/images/optimizelink-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top right;
