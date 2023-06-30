@@ -1,5 +1,5 @@
 import Footer from '../component/Footer';
-import NavBar from '../component/NavBar';
+
 import { Link } from 'react-router-dom';
 
 const Login = () => {

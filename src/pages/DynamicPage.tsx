@@ -1,8 +1,8 @@
-import { BrowserRouter as Router, useParams, Navigate } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 import db from '../firebase/services'
 
 import { collection, onSnapshot, } from 'firebase/firestore'
-import { useState, useEffect } from 'react'
+import { useState, } from 'react'
 
 
 const DynamicPage: React.FC = () => {
