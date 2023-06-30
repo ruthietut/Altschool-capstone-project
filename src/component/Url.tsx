@@ -27,7 +27,7 @@ function Url() {
       alert("Please check your entry")
       return
     }
-    let shortURL: string = "xrly.vercel.com/" + longUrl.replace(/[^a-z]/g, '').slice(-6);
+    let shortURL: string = "xrly.vercel.app/" + longUrl.replace(/[^a-z]/g, '').slice(-6);
     setShortUrl(shortURL)
 
     if (!urls[shortURL as keyof typeof urls]) {
