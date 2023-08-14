@@ -1,21 +1,23 @@
-import { FaTwitter } from 'react-icons/fa'
-import { FaInstagram } from 'react-icons/fa'
-import { FaLinkedin } from 'react-icons/fa'
-import { FaFacebook } from 'react-icons/fa'
-import '../App.css'
+// import { FaTwitter } from 'react-icons/fa'
+// import { FaInstagram } from 'react-icons/fa'
+// import { FaLinkedin } from 'react-icons/fa'
+// import { FaFacebook } from 'react-icons/fa'
+// import '../App.css'
 
 
-function Footer() {
-  return (
-    <>
-      <div className='footer-bg'>
-        <div className="  footer-top">
-          <div className="p-5 footer-top-element">
+// function Footer() {
+//   return (
+//     <>
+//       <div className='footer-bg'>
+
+      
+//         <div className="  footer-top">
+        <div className="p-5 footer-top-element ">
             <ul>
               <img
-                src="./src/assets/images/scissorlogoBlack.png"
+                src="./src/assets/images/scissor logo Black.png"
                 alt="Image"
-                className="pb-5 w-16"
+                className="pb-5 w-26 "
               />
               <div className="flex gap-3 pb-5 ">
                 <FaTwitter className=" cursor-pointer hover:text-blue-600" />
@@ -25,7 +27,44 @@ function Footer() {
               </div>
             </ul>
           </div>
-          <div className="p-5 ">
+        
+
+        // <div className=" footer-bottom">
+         
+        // </div>
+//       </div>
+
+//     </>
+//   )
+// }
+// export default Footer
+
+import React from 'react';
+import { FaTwitter, FaInstagram, FaLinkedin, FaFacebook } from 'react-icons/fa';
+import '../App.css';
+
+function Footer() {
+  return (
+    <div className="footer-bg">
+      <div className="footer-top">
+        <div className="p-5 footer-top-element">
+          <ul>
+            <li className="pb-5">
+              <img
+                src="./src/assets/images/scissor logo Black.png"
+                alt="Scissor Logo"
+                className="w-26"
+              />
+            </li>
+            <li className="flex gap-3 pb-5">
+              <FaTwitter className="cursor-pointer hover:text-blue-600" />
+              <FaInstagram className="cursor-pointer hover:text-purple-500" />
+              <FaLinkedin className="cursor-pointer hover:text-blue-600" />
+              <FaFacebook className="cursor-pointer hover:text-blue-600" />
+            </li>
+          </ul>
+        </div>
+        <div className="p-5 ">
             <ul>
               <p className="text-gray-800 font-bold text-sm/[12px] pb-4">
                 Why Scissor?
@@ -102,10 +141,10 @@ function Footer() {
               </li>
             </ul>
           </div>
-        </div>
-
-        <div className=" footer-bottom">
-          <div className="p-5">
+        
+      </div>
+      <div className="footer-bottom ">
+      <div className="p-5">
             <ul>
               <p className="text-gray-800 font-bold text-sm mb-3">Resources</p>
               <li className=" text-sm hover:text-blue-600 curosr-pointer  ">
@@ -174,10 +213,9 @@ function Footer() {
               </li>
             </ul>
           </div>
-        </div>
       </div>
-
-    </>
-  )
+    </div>
+  );
 }
-export default Footer
+
+export default Footer;

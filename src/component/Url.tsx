@@ -1,84 +1,57 @@
-import '../App.css'
-
 import db from '../firebase/services'
-import { collection, onSnapshot, setDoc, doc } from 'firebase/firestore'
-
-import { useState, useEffect } from 'react'
+import '../App.css';
+import { useState, useEffect } from 'react';
+import { collection, onSnapshot, setDoc, doc } from 'firebase/firestore';
 
 
 function Url() {
-
-  const [longUrl, setLongUrl] = useState('')
-  const [shortUrl, setShortUrl] = useState<string>('')
-  const [alias, setAlias] = useState('')
-  const [domain, setDomain] = useState('')
-  const [urls, setUrls] = useState({})
-
-  const [success, setSuccess] = useState(false)
-
-  type urls = {
-    [key: string]: string
-  }
-
-  const trimUrl = async (e: any) => {
-    e.preventDefault()
-
-    if (longUrl === '' || alias === '' || domain === '') {
-      alert("Please check your entry")
-      return
-    }
-    let shortURL: string = "xrly.vercel.app/" + longUrl.replace(/[^a-z]/g, '').slice(-6);
-    setShortUrl(shortURL)
-
-    if (!urls[shortURL as keyof typeof urls]) {
-      setUrls({
-        ...urls,
-        [shortURL]: longUrl
-      })
-
-      alert("Your shortened URL is " + shortURL)
-
-
-      const docRef = doc(db, "URLs", "URLs")
-      const payload = { ...urls, [shortURL]: longUrl }
-      await setDoc(docRef, payload)
-
-
-      // db.collection("URLs").doc("URLs").set({
-      //   [shortURL]: longUrl
-      // })
-
-      setLongUrl('')
-      setAlias('')
-      setDomain('')
-      setSuccess(!success)
-    }
-
-    else {
-      alert("This URL already exists")
-      setSuccess(!success)
-    }
-
-
-  }
+  const [longUrl, setLongUrl] = useState('');
+  const [shortUrl, setShortUrl] = useState('');
+  const [alias, setAlias] = useState('');
+  const [domain, setDomain] = useState('');
+  const [urls, setUrls] = useState<{ [key: string]: string }>({});
+  const [success, setSuccess] = useState(false);
 
   useEffect(() => {
-    const snap = async () => {
-      await onSnapshot(collection(db, "URLs"), (snapshot) => {
-        let data = snapshot.docs.map(doc => doc.data())
+    const fetchUrls = async () => {
+      const urlsCollectionRef = collection(db, 'URLs');
+      const unsubscribe = onSnapshot(urlsCollectionRef, (snapshot) => {
+        const urlsData: { [key: string]: string } = {};
+        snapshot.forEach((doc) => {
+          urlsData[doc.id] = doc.data().longUrl;
+        });
+        setUrls(urlsData);
+      });
+      return unsubscribe;
+    };
 
-        // merge the data into an object
-        let myData = Object.assign({}, ...data)
-        setUrls(myData)
+    fetchUrls();
+  }, []);
 
-      }
-      );
+  const trimUrl = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (longUrl === '' || alias === '' || domain === '') {
+      alert('Please check your entry');
+      return;
     }
 
-    snap()
-  }, [])
+    const shortURL: string = 'xrly.vercel.app/' + longUrl.replace(/[^a-z]/g, '').slice(-6);
 
+    if (!urls[shortURL]) {
+      const docRef = doc(db, 'URLs', shortURL);
+      const payload = { longUrl };
+      await setDoc(docRef, payload);
 
+      setShortUrl(shortURL);
+      setSuccess(true);
+      setLongUrl('');
+      setAlias('');
+      setDomain('');
+    } else {
+      alert('This URL already exists');
+    }
+  };
 
   return (
     <>
@@ -178,4 +151,4 @@ function Url() {
   )
 }
 
-export default Url
+export default Url;

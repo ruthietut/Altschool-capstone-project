@@ -17,6 +17,7 @@ function NavBar() {
             <header className='bg-white py-1'>
                 <nav className='flex flex-row justify-between items-center font-medium text-lg px-10 py-5 '>
                     <div className='basis-1/8'>
+                        
                         <img src={logo} alt="scissor's logo" />
                     </div>
                     <div className=' my-nav'>
