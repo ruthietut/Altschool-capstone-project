@@ -10,7 +10,6 @@ import { FAQQuestionAndAnswer } from "../../data/Faq";
 // Naviagtion Style
 import style from "./Faq.module.scss";
 
-
 // Icon Style
 const Iconstyle = {
   fontSize: "1.5em",
@@ -41,11 +40,8 @@ const FAQTab = ({ data }: any) => {
         </div>
         <div
           className={
-            isClicked
-              ? style.show_tab
-              : `${style.show_tab}  ${style.hide_tab} `
-          }
-        >
+            isClicked ? style.show_tab : `${style.show_tab}  ${style.hide_tab} `
+          }>
           <p className={style.tab_answer}>{data.answer}</p>
         </div>
       </div>

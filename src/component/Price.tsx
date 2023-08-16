@@ -1,4 +1,4 @@
-import React from "react";
+
 import CheckedCircle from "../assets/vectors/CheckedCircle";
 import CheckedCircleLight from "../assets/vectors/CheckedCircleLight";
 import "../styles/Price.css";
