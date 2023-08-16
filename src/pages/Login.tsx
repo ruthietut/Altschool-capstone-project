@@ -1,10 +1,8 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 const Login = () => {
   return (
     <>
-
       <div className="2xl:container h-auto m-auto">
-
         <div className="relative h-fit mx-auto lg:w-6/12">
           <div className="m-auto py-12 px-6 sm:p-20 xl:w-10/12">
             <div className="space-y-4">
@@ -22,7 +20,7 @@ const Login = () => {
                     alt=""
                   />
                   <span className="block w-max font-medium tracking-wide text-sm text-white">
-                    {' '}
+                    {" "}
                     Google
                   </span>
                 </div>
@@ -79,7 +77,9 @@ const Login = () => {
                 <a href="#" type="reset" className="w-max p-3 -ml-3">
                   <span className="text-sm tracking-wide text-black-600 text-center">
                     Don't have an account?
-                    <Link to={'/signup'} className="text-[#005AE2]">Sign up</Link>
+                    <Link to={"/signup"} className="text-[#005AE2]">
+                      Sign up
+                    </Link>
                   </span>
                 </a>
                 <p className="text-center text-sm text-gray-400 mt-4 w-">
@@ -87,18 +87,16 @@ const Login = () => {
                   Scissors's
                   <span className="text-black">
                     Terms of Service, Privacy Policy
-                  </span>{' '}
+                  </span>{" "}
                   and <span className="text-black">Acceptable Use Policy</span>
-
-                </p>{' '}
+                </p>{" "}
               </div>
             </form>
           </div>
         </div>
       </div>
-      
     </>
-  )
-}
+  );
+};
 
-export default Login
+export default Login;

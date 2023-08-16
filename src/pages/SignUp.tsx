@@ -1,15 +1,9 @@
-
-import {Link} from 'react-router-dom';
-
+import { Link } from "react-router-dom";
 
 const SignUp = () => {
-
-
-
   return (
     <>
       <div className="2xl:container h-auto m-auto">
-
         <div className="relative h-full mx-auto lg:w-6/12">
           <div className="m-auto py-12 px-6 sm:p-20 xl:w-10/12">
             <div className="space-y-4">
@@ -27,7 +21,7 @@ const SignUp = () => {
                     alt=""
                   />
                   <span className="block w-max font-medium tracking-wide text-sm text-white">
-                    {' '}
+                    {" "}
                     Google
                   </span>
                 </div>
@@ -86,7 +80,7 @@ const SignUp = () => {
                 />
               </div>
 
-              <div className='text-center'>
+              <div className="text-center">
                 <button className="w-full px-6 py-3 rounded-full bg-[#005AE2] transition hover:bg-sky-600 focus:bg-sky-600 active:bg-sky-800">
                   <span className="font-semibold text-white text-lg">
                     Sign up with Email
@@ -94,10 +88,9 @@ const SignUp = () => {
                 </button>
                 <a href="#" type="reset" className="w-max p-3 -ml-3">
                   <span className="text-sm tracking-wide text-black-600 text-center">
-                    Already have an account?{' '}
+                    Already have an account?{" "}
                     <span className="text-[#005AE2]">
-                    <Link to="/Login">Login</Link>
-                    
+                      <Link to="/Login">Login</Link>
                     </span>
                   </span>
                 </a>
@@ -106,18 +99,16 @@ const SignUp = () => {
                   Scissors's
                   <span className="text-black">
                     Terms of Service, Privacy Policy
-                  </span>{' '}
+                  </span>{" "}
                   and <span className="text-black">Acceptable Use Policy</span>
-
-                </p>{' '}
+                </p>{" "}
               </div>
             </form>
           </div>
         </div>
       </div>
-      
     </>
-  )
-}
+  );
+};
 
-export default SignUp
+export default SignUp;

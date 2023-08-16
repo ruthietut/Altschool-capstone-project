@@ -1,24 +1,24 @@
+import React from 'react';
 import CheckedCircle from '../assets/vectors/CheckedCircle';
 import CheckedCircleLight from '../assets/vectors/CheckedCircleLight';
-import '../styles/Price.css'
-
+import '../styles/Price.css';
 
 const Price = () => {
   return (
-    <div className="w-full price" id="price">
+    <div className="w-full price px-5 py-10 md:py-20" id="price">
       <div className="mx-auto text-center">
-        <h1 className="text-3xl font-bold mb-2">
+        <h1 className="text-xl md:text-3xl font-bold mb-2">
           A <span className="text-[#005AE2]">price perfect</span> for your
           needs.
         </h1>
-        <p className=" mx-auto price-subtext">
+        <p className="mx-auto price-subtext">
           From catering for your personal, business, event, socials needs, you
           can be rest assured we have you in mind in our pricing.
         </p>
       </div>
-      <div className="flex justify-center items-center mt-12 pricing-container">
-        <div className="border border-[#005AE2] rounded-lg py-10 flex justify-center items-center h-fit pricing">
-          <div className="">
+      <div className="flex flex-col md:flex-row justify-center items-center mt-12 space-y-6 md:space-y-0 space-x-0 md:space-x-6 pricing-container ">
+        <div className="border border-[#005AE2] rounded-lg py-8 md:py-10 flex flex-col justify-center items-center h-fit pricing">
+        <div className="">
             <h1 className="text-xl">Basic</h1>
             <h5 className="text-5xl font-bold mt-5">Free</h5>
             <p className="mt-3">Free plan for all users</p>
@@ -44,10 +44,10 @@ const Price = () => {
                 &nbsp; Ad-supported
               </li>
             </ul>
-          </div>
+           </div>
         </div>
-        <div className="border border-[#005AE2] rounded-lg pricing py-20 flex justify-center items-center bg-[#1E3448] text-white">
-          <div className="">
+        <div className="border border-[#005AE2] rounded-lg pricing py-20  px-10 flex justify-center items-center bg-[#1E3448] text-white">
+        <div className="">
             <h1 className="text-xl">Professional </h1>
             <h5 className="text-5xl font-bold mt-5">$15/month</h5>
             <p className="mt-3">Ideal for business creators</p>
@@ -75,8 +75,8 @@ const Price = () => {
             </ul>
           </div>
         </div>
-        <div className="border border-[#005AE2] rounded-lg pricing py-10 flex justify-center items-center h-fit">
-          <div className="">
+        <div className="border border-[#005AE2] rounded-lg py-8 md:py-10 flex flex-col justify-center items-center h-fit pricing">
+        <div className="">
             <h1 className="text-xl">Teams</h1>
             <h5 className="text-5xl font-bold mt-5">$25/Month</h5>
             <p className="mt-3">Share with up to 10 users</p>
@@ -105,8 +105,10 @@ const Price = () => {
           </div>
         </div>
       </div>
-      <div className='flex justify-center items-center w-full my-16'>
-        <button className='rounded-full bg-[#005AE2] text-white py-3 px-6'>Select Pricing</button>
+      <div className="flex justify-center items-center w-full mt-10 md:mt-16">
+        <button className="rounded-full bg-[#005AE2] text-white py-3 px-6">
+          Select Pricing
+        </button>
       </div>
     </div>
   );
