@@ -1,7 +1,7 @@
-import React from 'react';
-import CheckedCircle from '../assets/vectors/CheckedCircle';
-import CheckedCircleLight from '../assets/vectors/CheckedCircleLight';
-import '../styles/Price.css';
+import React from "react";
+import CheckedCircle from "../assets/vectors/CheckedCircle";
+import CheckedCircleLight from "../assets/vectors/CheckedCircleLight";
+import "../styles/Price.css";
 
 const Price = () => {
   return (
@@ -18,7 +18,7 @@ const Price = () => {
       </div>
       <div className="flex flex-col md:flex-row justify-center items-center mt-12 space-y-6 md:space-y-0 space-x-0 md:space-x-6 pricing-container ">
         <div className="border border-[#005AE2] rounded-lg py-8 md:py-10 flex flex-col justify-center items-center h-fit pricing">
-        <div className="">
+          <div className="">
             <h1 className="text-xl">Basic</h1>
             <h5 className="text-5xl font-bold mt-5">Free</h5>
             <p className="mt-3">Free plan for all users</p>
@@ -44,10 +44,10 @@ const Price = () => {
                 &nbsp; Ad-supported
               </li>
             </ul>
-           </div>
+          </div>
         </div>
         <div className="border border-[#005AE2] rounded-lg pricing py-20  px-10 flex justify-center items-center bg-[#1E3448] text-white">
-        <div className="">
+          <div className="">
             <h1 className="text-xl">Professional </h1>
             <h5 className="text-5xl font-bold mt-5">$15/month</h5>
             <p className="mt-3">Ideal for business creators</p>
@@ -76,7 +76,7 @@ const Price = () => {
           </div>
         </div>
         <div className="border border-[#005AE2] rounded-lg py-8 md:py-10 flex flex-col justify-center items-center h-fit pricing">
-        <div className="">
+          <div className="">
             <h1 className="text-xl">Teams</h1>
             <h5 className="text-5xl font-bold mt-5">$25/Month</h5>
             <p className="mt-3">Share with up to 10 users</p>

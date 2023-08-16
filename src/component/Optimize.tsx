@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 function Optimize() {
   return (
@@ -13,8 +13,7 @@ function Optimize() {
       <div className="flex mt-5 mb-10">
         <Link
           to="/signup"
-          className="bg-[#005AE2] hover:bg-blue-700 text-white font-bold py-2 px-6 md:px-8 rounded-full"
-        >
+          className="bg-[#005AE2] hover:bg-blue-700 text-white font-bold py-2 px-6 md:px-8 rounded-full">
           Get Started
         </Link>
       </div>
@@ -23,4 +22,3 @@ function Optimize() {
 }
 
 export default Optimize;
-
