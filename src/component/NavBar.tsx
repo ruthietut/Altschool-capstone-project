@@ -2,7 +2,7 @@ import  { useState, useEffect } from "react";
 import logo from "../assets/images/Logo scissor Blue.png";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
 
 function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,9 +12,9 @@ function NavBar() {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const toggleHiddenMenu = () => {
-    setIsHidden(!isHidden);
-  };
+  // const toggleHiddenMenu = () => {
+  //   setIsHidden(!isHidden);
+  // };
 
   useEffect(() => {
     let prevScrollPos = window.pageYOffset;
